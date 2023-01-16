@@ -1,0 +1,1 @@
+import{_ as t,b as a,A as _,m as r,e as c,B as o,o as i}from"./platForm.2758e6cf.js";const l={alt:""},n={setup(d){let e={src:new URL("/assets/1.74b16ab1.jpg",self.location).href};return(p,u)=>{const s=o("lazy");return i(),a("div",null,[_(c("img",l,null,512),[[s,r(e).src]])])}}};var f=t(n,[["__scopeId","data-v-1ab5e5c0"]]);export{f as default};
