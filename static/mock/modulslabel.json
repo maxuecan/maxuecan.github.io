@@ -1,0 +1,50 @@
+[
+    {                           
+        "id": 0,                  
+        "label": "fulldistinguish",        
+        "type": "array",          
+        "name": "通用模型",
+        "hide": false,
+        "parent": -1
+    },
+    {
+        "id": 1,
+        "label": "data", 
+        "type": "array_object",         
+        "name": "预测结果",         
+        "hide": false,            
+        "parent": 0                
+    },
+    {
+        "id": 2,
+        "label": "tag_name",
+        "type": "string",        
+        "name": "标签类型",
+        "hide": false,
+        "parent": 1
+    },
+    {
+        "id": 3,
+        "label": "probability",
+        "type": "number",
+        "name": "概率标签",
+        "hide": false,
+        "parent": 1
+    },
+    {
+        "id": 4,
+        "label": "left_up",
+        "type": "array_number",
+        "name": "左上坐标",
+        "hide": false,
+        "parent": 0
+    },
+    {
+        "id": 5,
+        "label": "right_down",
+        "type": "array_number",     
+        "name": "右下坐标",
+        "hide": false,
+        "parent": 0
+    }
+]
