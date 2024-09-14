@@ -1,1 +1,0 @@
-const EventEmitter=require("events");class nodeEventEmitter extends EventEmitter{constructor(){super()}}export default nodeEventEmitter;

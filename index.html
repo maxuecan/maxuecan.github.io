@@ -1,124 +1,15 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="google" value="notranslate"><meta name="viewport" content="width=device-width,user-scalable=no"><title>嵌入式平台</title><link rel="icon" href="/media/icon/tanqi-favicon.ico"><meta name="theme-color" content="#fff"><link rel="manifest" href="manifest.json"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-162001686-1"></script><script>function setCookie(cname, cvalue, cpassword_value, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + "&"+ "last_pass="+ cpassword_value + ";" + expires + ";path=/";
-      }
-
-      function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        // console.log(ca)
-        for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);  
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-
-      function checkCookie() {
-        var cookies = getCookie("last_ip");
-        if (cookies != "") {
-          var cookies_ = cookies.split('&')
-          document.getElementById('url').value = cookies_[0]
-          document.getElementById('password').value = cookies_[1].substring("last_pass=".length, cookies_[0].length)
-        } 
-      }
-      
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-162001686-1');</script><link rel="stylesheet" href="core/libs.css"><script src="blockly/blockly_compressed.js"></script><script src="blockly/blocks_compressed.js"></script><script src="blockly/javascript_compressed.js"></script><script src="blockly/python_compressed.js"></script><script src="core/code.js?ver=0.2.3.841940"></script><script src="core/channel.js?ver=0.2.3.841940"></script><script src="core/utils.js?ver=0.2.3.841940"></script><script src="core/ui.js?ver=0.2.3.841940"></script><script src="core/queue.js"></script><script src="core/FileSaver.js"></script><script src="core/shortcut.js"></script><script src="pylibsBlobs/main.js"></script><script src="pylibsBlobs/ssd1306.js"></script><script src="pylibsBlobs/rtttl.js"></script><script src="pylibsBlobs/songs.js"></script><script src="pylibsBlobs/hcsr04.js"></script><script src="core/block_definitions.js?ver=0.2.3.11011813"></script><script src="core/generator_stubs.js?ver=0.2.3.11011813"></script><script src="core/xterm.js?ver=4.13.0"></script><script src="core/codemirror/codemirror.js"></script><script src="core/codemirror/mode/python/python.js"></script><link rel="stylesheet" href="core/codemirror/addon/dialog/dialog.css"><link rel="stylesheet" href="core/codemirror/addon/search/matchesonscrollbar.css"><link rel="stylesheet" href="core/codemirror/addon/scroll/simplescrollbars.css"><script src="core/codemirror/addon/dialog/dialog.js"></script><script src="core/codemirror/addon/search/searchcursor.js"></script><script src="core/codemirror/addon/search/search.js"></script><script src="core/codemirror/addon/search/matchesonscrollbar.js"></script><script src="core/codemirror/addon/search/jump-to-line.js"></script><script src="core/codemirror/addon/scroll/annotatescrollbar.js"></script><script src="core/codemirror/addon/scroll/simplescrollbars.js"></script><link rel="stylesheet" href="core/codemirror/codemirror.css"><script src="jsCv/v30.js"></script><script src="jsCv/v30/python.js"></script><script src="jsCv/v30/blocks.js"></script><link rel="stylesheet" href="jsTree/dist/themes/default/style.css"><script src="jq/jquery-3.5.1.min.js"></script><script src="jsTree/jstree.min.js"></script><script defer="defer" src="js/build.4a85781dfa.js"></script><script defer="defer" src="js/build.a44c902be6.js"></script><script defer="defer" src="js/build.70d049b45a.js"></script><script defer="defer" src="js/build.761ca5e3bd.js"></script><script defer="defer" src="js/build.b713d4e0a1.js"></script><script defer="defer" src="js/build.854ea0a189.js"></script><script defer="defer" src="js/build.8409ff1a00.js"></script><script defer="defer" src="js/build.ff97053d70.js"></script><script defer="defer" src="js/build.217af8c0df.js"></script><script defer="defer" src="js/build.d4b38f028b.js"></script><script defer="defer" src="js/build.331736593b.js"></script><script defer="defer" src="js/build.3ab39bea6e.js"></script><script defer="defer" src="js/build.067bcd50db.js"></script><link href="style.css" rel="stylesheet"></head><body><div class="top-menu"><div class="header-left-content"><div class="logo"></div><div class="ability"><div class="ability-files"><button class="dropbtn"><div class="icon-files"></div><div class="icon-more"></div></button><ul class="dropdown-files"><li class="dropdown-submenu"><div class="dropdown-toggle new-built">新建</div></li><li class="dropdown-submenu"><div class="dropdown-toggle open-files">打开</div></li></ul></div></div></div><ul class="channel-connect"><li class="juggle-container active"><div class="icon_juggle"></div><span>积木</span></li><li class="code-container"><div class="icon_code"></div><span>代码</span></li></ul><div class="header-right-content"><div class="toolbars"><div class="com-right-btn course"></div><div class="com-right-btn knowledge"></div><div class="other-container"><button class="other-com-btn save">保存</button><div class="sign"></div></div></div></div></div><div id="content-files" class="content ani on" style="width: 100%;"><div id="file-list-box"><div><div class="file-nav"><div class="file-nav-close"><div class="com-img icon-save"></div></div><ul class="file-tool"><li class="com-img add-py"><div class="com-tips add-py-tips">添加.py文件</div></li><li class="com-img add-files"><div class="com-tips add-files-tips">添加文件夹</div></li><label class="upload-file_" for="put-file"><li class="com-img upload-file"><div class="com-tips upload-file-tips">添加本地文件</div><input type="file" id="put-file" accept=".zip"></li></label><li class="com-img icon-refresh"><div class="com-tips icon-refresh-tips">刷新</div></li><input name="PutFileList" id="put-file-select" type="file" accept=".zip" required=""></ul><ul class="package-tool"><li class="com-img add-package"><div class="com-tips add-package-tips">添加包</div></li><li class="com-img delete-package"><div class="com-tips delete-package-tips">删除包</div></li><li class="com-img refresh-package"><div class="com-tips refresh-package-tips">刷新</div></li></ul></div><div class="file-content"><ul class="file-tags"><li class="file-tag file-tags-on"><div class="file-tag-icon"></div><span>文件管理</span></li><li class="package-tag"><div class="package-tag-icon"></div><span>包 管理</span></li></ul><div class="file-list"><div id="file-status">...</div><span id="files-panel"><div id="jstree1" style="width: 100%; background: white"></div><ul class="files-list"></ul><span id="fileList"></span></span><div class="file-mask"><svg viewBox="25 25 50 50" class="load-box"><circle cx="50" cy="50" r="20" fill="none" class="load-circle"></circle></svg></div></div></div></div><div class="file-drag-line"></div></div><div class="file-nav-open"><div class="com-img file-nav-save"></div></div><div id="main-content" style="position: relative; width: fit-content; overflow: hidden;"><ul class="content-nav"></ul><div id="content_blocks" class="content" style="overflow: hidden;"></div><textarea id="content_file_code" wrap="off"></textarea><div class="footer-tool"><div class="history"><button><div class="com-his revoke"></div></button> <button><div class="com-his reform"></div></button></div><div class="line"></div><div class="scaling"><button class="com-scaling subtract"><div class="icon-subtract"></div></button> <span class="pre-progress">30%</span> <button class="com-scaling add"><div class="icon-add"></div></button></div><div class="com-footer-btn link"><div class="icon-link"></div><span class="link-text">连接</span></div><div class="com-footer-btn stop"></div><div class="com-footer-btn run"></div><div class="icon-debug"><div class="com-tips controls-tips">控制台</div></div><button class="textare-find"><div class="icon-find"></div><div class="com-tips code-tips">查找代码</div></button></div><div class="code-guide"><div class="code-guide-content"></div></div><div class="external-box"><div class="camera"><div class="icon-camera"></div><div class="mini-camera"><div class="min-camera-header"><div class="mini-camera-resize"></div><div class="mini-camera-close"></div></div><div class="camera-img"></div><span class="camera-text">拍照</span></div></div></div></div><div class="dis-code"><div class="dis-code-til"><div class="icon_dis"></div>只读模式不可编辑</div><textarea name="code" id="code"></textarea><div class="icon_code_close"></div></div></div><div class="icon-code-open"></div><div class="mask"></div><div id="content_console" class="content ani on debug-console" style="height: fit-content;"><div class="console-container"><div class="drag-line"></div><div class="console-left"><div class="icon-debug1"></div>控制台</div><div class="console-right"><div class="icon-delete"></div><div class="icon-close1"></div></div></div><tr height="25%" id="termTR"><td><div style="width:100%; display:inline-block; vertical-align:top; z-index: 1112;"><div id="term" class="xterm"></div></div></td></tr></div><div class="sign-in"><div class="sign-close"></div><div class="sign-container"><div class="logo1"></div><p style="margin: 56px 0 0 0">登录</p><div class="sign-phone"><div class="icon_phone"></div><input class="phone-ipt" placeholder="请输入11位手机号"><div class="phone-close"></div></div><div class="sign-pwd"><div class="icon_pwd"></div><input class="pwd-ipt" placeholder="请输入6~12位密码"><div class="pwd-close"></div></div><div class="sign-fun"><div><div class="icon_nocheck"></div><span style="font-size: 12px; color: #BBBBBB">七天内免登录</span></div><div><span style="font-size: 14px; color: #CE8137">注册账号</span><div class="icon_line"></div><span style="font-size: 14px; color: #CE8137">忘记密码</span></div></div><div style="position: relative"><span class="sign-error">账号或密码不正确</span> <input class="log-on" type="button" value="登录"></div></div></div><div class="com-mask"></div><div class="com-tip"><div></div><span class="tip-msg"></span></div><!-- ################################################## --><!-- ################################################## --><div class="progress-bar"></div><div class="notify"></div><div class="notify-panel"></div></body><script>// Init blockly
-    Code.init ();
-    // window.addEventListener('load', Code.init);
-    // let yunxin = document.getElementById('yunxin')
-    // yunxin.addEventListener('click', () => {
-    //   console.log(Code.generateCode())
-    // })
-
-    /* global WebSocket, WebSerial and Bluetooth variable and functions (see core/channel.js) */
-    var Channel = {};
-    Channel ['websocket'] = new websocket ();
-    Channel ['webserial'] = new webserial ();
-    Channel ['webbluetooth'] = new webbluetooth ();
-    Channel ['mux'] = new mux ();
-
-    //global terminal variable
-    var terminal = new Terminal ();
-
-    term.init('#term') //init expanded class;
-
-    //global Utilities variable and functions (see core/utils.js)
-    var Files = new files ('#fileList');
-
-    // global User Interface variable and functions (see core/ui.js) */
-    var UI = {};
-    UI ['responsive'] = new responsive ();
-    UI ['notify'] = new notify ();
-    UI ['progress'] = new progress ();
-    // UI ['account'] = new account ('#accountButton','.account-panel');
-    // UI ['notify-panel'] = new panel ('#notificationButton','.notify-panel');
-    // UI ['channel-panel'] = new channelPanel ('#channelButton','.channel-panel');
-    // UI ['toolbar'] = new panel ('#toolbarButton','.toolbar');
-    UI ['workspace'] = new workspace ();
-
-    bufferPush = mux.bufferPush;
-
-    //Make sure we wont use data from last session (BIPES serial to freeboard bridge)
-    Tool.clearQueue ();
-
-    window.onload = function(e) {
-      e.preventDefault()
-      checkCookie()
-      // loadPage(); //Load modal splash screen 弹框代码
-
-      //i18n
-      //Auto detect user language (from the browser)
-      var userLang = navigator.language || navigator.userLanguage + " ";
-      //alert ("The language is: " + userLang);
-      var addMsg="";
-
-      //Also, detect language from the URL
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      let pLang = urlParams.get('lang')
-
-      if (!userLang)
-        userLang='en';
-      if (!pLang)
-        pLang='en';
-
-      if ((userLang.startsWith("pt")) || (pLang.startsWith("pt"))) {	
-        addMsg="<p><a href=/beta2/ui/?lang=pt-br>Acessar o BIPES em Português</a>";
-        addMsg+=" | <a href=/beta2/ui/?lang=en>Access BIPES in English</a>";
-      }
-
-      //BIPES keyboad hotkeys
-      //Source: http://www.openjs.com/scripts/events/keyboard_shortcuts/
-      //Includes core/shortcut.js
-      shortcut.add("Ctrl+Shift+L",function() {
-        //alert("BIPES hotkey: screenshot!");
-        Tool.exportScreenshot();
-      });
-
-      shortcut.add("Ctrl+Shift+E",function() {
-        //alert("BIPES hotkey: Run program and switch to console!");
-        Code.handleLink('console',1)
-        Tool.runPython();
-      });
-
-      shortcut.add("Ctrl+Shift+R",function() {
-        //alert("BIPES hotkey: Run program!");
-        Tool.runPython();
-      });
-
-      shortcut.add("Ctrl+Shift+S",function() {
-        //alert("BIPES hotkey: Stop program!");
-        Tool.stopPython();
-      });
-    };</script></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>马学灿个人作品</title>
+    <script type="module" crossorigin src="/assets/platForm.da158ce1.js"></script>
+    <link rel="stylesheet" href="/assets/platForm.078de102.css">
+  </head>
+  <body style="overflow-y: auto; overflow-x: hidden;">
+    <div id="app"></div>
+    
+  </body>
+</html>
