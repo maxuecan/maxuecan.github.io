@@ -761,7 +761,7 @@ $(document).ready(function() {
     $('#example-container').css('display', 'none')
   })
 
-  createLibList()
+  // createLibList()
 })
 
 function createLibList() {
