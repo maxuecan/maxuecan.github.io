@@ -1,0 +1,528 @@
+<document>
+  <category name="%{BKY_CATLOGIC}" colour="%{BKY_LOGIC_HUE}" css-icon="logic-icon com-block">
+    <block type="controls_if"></block>
+    <block type="logic_compare"></block>
+    <block type="logic_operation"></block>
+    <block type="logic_negate"></block>
+    <block type="logic_boolean"></block>
+    <block type="logic_null"></block>
+    <block type="logic_ternary"></block>
+  </category>
+
+  <category name="%{BKY_CATLOOPS}" colour="%{BKY_LOOPS_HUE}" css-icon="loop-icon com-block">
+    <block type="main_loop"></block>
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="delay">
+      <value name="time">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="delay_ms">
+      <value name="time">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="controls_whileUntil"></block>
+    <block type="controls_for">
+      <value name="FROM">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="TO">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <value name="BY">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="controls_forEach"></block>
+    <block type="controls_flow_statements"></block>
+  </category>
+
+  <category name="%{BKY_CATMATH}" colour="%{BKY_MATH_HUE}" css-icon="math-icon com-block">
+    <block type="math_number">
+      <field name="NUM">123</field>
+    </block>
+    <block type="math_arithmetic">
+      <value name="A">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="B">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_single">
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">9</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_trig">
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">45</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_constant"></block>
+    <block type="math_number_property">
+      <value name="NUMBER_TO_CHECK">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_round">
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">3.1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_on_list"></block>
+    <block type="math_modulo">
+      <value name="DIVIDEND">
+        <shadow type="math_number">
+          <field name="NUM">64</field>
+        </shadow>
+      </value>
+      <value name="DIVISOR">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_constrain">
+      <value name="VALUE">
+        <shadow type="math_number">
+          <field name="NUM">50</field>
+        </shadow>
+      </value>
+      <value name="LOW">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="HIGH">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_random_int">
+      <value name="FROM">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="TO">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_random_float"></block>
+    <block type="var_to_int">
+      <field name="VAR">to int</field>
+    </block>
+  </category>
+
+  <category name="%{BKY_CATTEXT}" colour="%{BKY_TEXTS_HUE}" css-icon="text-icon com-block">
+    <block type="text"></block>
+    <block type="text_join"></block>
+    <block type="text_append">
+      <value name="TEXT">
+        <shadow type="text"></shadow>
+      </value>
+    </block>
+    <block type="text_length">
+      <value name="VALUE">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_isEmpty">
+      <value name="VALUE">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_indexOf">
+      <value name="VALUE">
+        <block type="variables_get">
+          <field name="VAR">{textVariable}</field>
+        </block>
+      </value>
+      <value name="FIND">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_charAt">
+      <value name="VALUE">
+        <block type="variables_get">
+          <field name="VAR">{textVariable}</field>
+        </block>
+      </value>
+    </block>
+    <block type="text_getSubstring">
+      <value name="STRING">
+        <block type="variables_get">
+          <field name="VAR">{textVariable}</field>
+        </block>
+      </value>
+    </block>
+    <block type="text_changeCase">
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_trim">
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_print">
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_prompt_ext">
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="text_to_str">
+      <field name="VAR">to str</field>
+    </block>
+  </category>
+
+  <category name="%{BKY_CATLISTS}" colour="%{BKY_LISTS_HUE}" css-icon="lists-icon com-block">
+    <block type="lists_create_with">
+      <mutation items="0"></mutation>
+    </block>
+    <block type="lists_create_with"></block>
+    <block type="lists_repeat">
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">5</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="lists_length"></block>
+    <block type="lists_isEmpty"></block>
+    <block type="lists_indexOf">
+      <value name="VALUE">
+        <block type="variables_get">
+          <field name="VAR">{listVariable}</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_getIndex">
+      <value name="VALUE">
+        <block type="variables_get">
+          <field name="VAR">{listVariable}</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_setIndex">
+      <value name="LIST">
+        <block type="variables_get">
+          <field name="VAR">{listVariable}</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_getSublist">
+      <value name="LIST">
+        <block type="variables_get">
+          <field name="VAR">{listVariable}</field>
+        </block>
+      </value>
+    </block>
+    <block type="lists_split">
+      <value name="DELIM">
+        <shadow type="text">
+          <field name="TEXT">,</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="lists_sort"></block>
+  </category>
+
+  <category name="%{BKY_CATVARIABLES}" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE" css-icon="variable-icon com-block"></category>
+  <category name="%{BKY_CATFUNCTIONS}" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE" css-icon="procedure-icon com-block"></category>
+
+  <category name="IO输入" colour="#3c0" css-icon="IO-i-icon com-block">
+    <block type="io_get">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_bool"></block>
+    <block type="adc_input">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_io.bz_button"></block>
+  </category>
+
+  <category name="IO输出" colour="#f66" css-icon="IO-o-icon com-block">
+    <block type="io_set">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+    </block>
+    <block type="pwm_set">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+      <value name="set_value">
+        <shadow type="math_number">
+          <field name="NUM">10000</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="pwm.deinit"></block>
+  </category>
+  <!-- 打印/通信 -->
+  <category name="通信器"  colour="#c93" css-icon="comm-icon com-block">
+    <!--block type="controls_ifelse">
+      <value name="IF0">
+      </value>
+      <value name="DO0">
+      </value>
+      <value name="ELSE">
+      </value>  
+    </block-->
+    <block type="print_line">
+      <value name="str">
+        <shadow type="text">
+          <field name="TEXT">Pico</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="print">
+      <value name="str">
+        <shadow type="text">
+          <field name="TEXT">Pico</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+
+  <category name="传感器"  colour="#3cf" css-icon="sensor-icon com-block">
+  </category>
+
+  <category name="执行器"  colour="#c6c" css-icon="actuator-icon com-block">
+    <block type="actuator.servo180">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="set_angle">
+        <shadow type="math_number">
+          <field name="NUM">90</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="actuator.servo360">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+      <value name="dir">
+        <shadow type="actuator.dir">
+          <field name="dir"></field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="actuator.servo360_2">
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+      <value name="dir">
+        <shadow type="actuator.dir">
+          <field name="dir"></field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="time">
+        <shadow type="math_number">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="actuator.dir"></block>
+  </category>
+  <!-- 显示模块 -->
+  <category name="显示器"  colour="#99f" css-icon="monitor-icon com-block">
+    <block type="display.led_init">
+      <value name="var_name">
+        <block type="variables_get">
+          <field name="VAR">rgb</field>
+        </block>
+      </value>
+      <value name="set_pin_num">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+      <value name="lamp_count">
+        <shadow type="math_number">
+          <field name="NUM">4</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="display.set_lamp_rgb">
+      <value name="var_name">
+        <block type="variables_get">
+          <field name="VAR">rgb</field>
+        </block>
+      </value>
+      <value name="lamp_num">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="red">
+        <shadow type="math_number">
+          <field name="NUM">255</field>
+        </shadow>
+      </value>
+      <value name="green">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="blue">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="display.rgb_fill">
+      <value name="var_name">
+        <block type="variables_get">
+          <field name="VAR">rgb</field>
+        </block>
+      </value>
+      <value name="red">
+        <shadow type="math_number">
+          <field name="NUM">255</field>
+        </shadow>
+      </value>
+      <value name="green">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="blue">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="write_rgb">
+      <value name="var_name">
+        <block type="variables_get">
+          <field name="VAR">rgb</field>
+        </block>
+      </value>
+    </block>
+    <block type="oled_init">
+      <value name="scl">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+      <value name="sda">
+        <shadow type="pinout">
+          <field name="PIN"></field>
+        </shadow>
+      </value>
+    </block>
+    <block type="oled_write">
+      <value name="text">
+        <shadow type="text">
+          <field name="TEXT">Hello</field>
+        </shadow>
+      </value>
+      <value name="x">
+        <shadow type="math_number">
+          <field name="NUM">40</field>
+        </shadow>
+      </value>
+      <value name="y">
+        <shadow type="math_number">
+          <field name="NUM">40</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="clear_oled"></block>
+  </category>
+
+  <category name="物联网"  colour="#56c" css-icon="network-icon com-block">
+  </category>
+  <!-- 遥控模块 -->
+  <category name="遥控器"  colour="#4cc" css-icon="control-icon com-block">
+  </category>
+
+</document>
