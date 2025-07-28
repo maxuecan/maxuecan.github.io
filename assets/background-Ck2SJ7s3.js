@@ -1,0 +1,1 @@
+import{_ as a}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as e,a as s,o as c}from"./index-DHr_H_gx.js";const r={},t={class:"background-container"};function n(d,o){return c(),e("div",t,o[0]||(o[0]=[s("div",{class:"bg1"},"颜色渐变",-1),s("div",{class:"bg2"},"颜色渐变",-1)]))}const f=a(r,[["render",n],["__scopeId","data-v-a4442624"]]);export{f as default};
