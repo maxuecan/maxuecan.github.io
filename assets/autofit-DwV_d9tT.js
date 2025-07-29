@@ -1,4 +1,4 @@
-import{_ as j}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{f as q,c as A,g as L,o as T}from"./index-BNrLSEyR.js";/**
+import{_ as j}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{f as q,c as A,g as L,o as T}from"./index-BN8_DKm7.js";/**
  * @name: autofit.js
  * @author: Larry Zhu
  * @version: 3.2.8
