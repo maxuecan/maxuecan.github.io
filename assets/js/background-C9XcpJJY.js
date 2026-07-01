@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-DlAUqK2U.js";import{c as a,a as s,o as c}from"../index-wavXXXEp.js";const r={},t={class:"background-container"};function n(d,o){return c(),a("div",t,[...o[0]||(o[0]=[s("div",{class:"bg1"},"颜色渐变",-1),s("div",{class:"bg2"},"颜色渐变",-1)])])}const f=e(r,[["render",n],["__scopeId","data-v-28d7b3d7"]]);export{f as default};
